@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //   window.location.href = 'connexion.html';
   // }
 
-  fetch('http://localhost:8888/getCategoriesForUser.php?userId=' + userId)
+  fetch('http://sentianyof.cluster027.hosting.ovh.net/anime/getCategoriesForUser.php?userId=' + userId)
     .then(response => response.json())
     .then(categories => {
       categories.forEach(category => {
